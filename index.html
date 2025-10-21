@@ -11,8 +11,11 @@
 
     <script>
         document.querySelector("test-input").addEventListener("input", toUppercase)
+        console.log('document.querySelector("test-input")', document.querySelector("test-input"))
+        
         function toUppercase(event) {
 			event.target.value = event.target.value.toUpperCase()
+            console.log('event.target.value', event.target.value)
 		}
     </script>
 </body>
