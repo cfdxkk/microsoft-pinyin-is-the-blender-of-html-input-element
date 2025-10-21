@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Pinyin is the blander of html input</title>
+</head>
+<body>
+    <p>Try to enter anything in the input box below using the Microsoft Pinyin input method.</p>
+    <input id="test-input" type="text" />
+
+    <script>
+        document.querySelector("test-input").addEventListener("input", toUppercase)
+        function toUppercase(event) {
+			event.target.value = event.target.value.toUpperCase()
+		}
+    </script>
+</body>
+</html>
